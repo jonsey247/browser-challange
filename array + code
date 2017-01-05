@@ -1,0 +1,13 @@
+var users = [
+	{firstName: 'Pete', lastName: 'Barrat', favoriteFood: 'Pizza', age: 30},
+	{firstName: 'Lisa', lastName: 'Jenkins', favoriteFood: 'Curry', age: 34},
+	{firstName: 'Bob', lastName: 'Yates', favoriteFood: 'Fish', age: 54},
+	{firstName: 'Claire', lastName: 'Smith', favoriteFood: 'Steak', age: 21},
+	{firstName: 'Adam', lastName: 'Johnson', favoriteFood: 'Pasta', age: 27}
+];
+
+function valueMapper(people) {
+  return users.map(i => i[people]);
+};
+
+console.log(valueMapper('lastName'));
